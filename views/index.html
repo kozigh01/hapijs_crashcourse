@@ -1,0 +1,12 @@
+<h1>{{ title }}</h1>
+<p>your message: {{ message }}</p>
+
+<ul>
+  {{#each tasks}}
+  <li>{{text}}</li>
+  {{/each}}
+</ul>
+
+<form method="POST" action="/">
+  <input type="text" name="text" placeholder="add task...">
+</form>
